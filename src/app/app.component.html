@@ -1,0 +1,10 @@
+<nav class="nav bg-dark d-flex">
+  <h3 class="text-light m-1"><a class="nav-link" routerLink="/">Flopbox</a></h3>
+
+  <a class="nav-link" routerLink="/flops">Flops</a>
+</nav>
+<a [routerLink]="['/flops']" [queryParams]="{ starsFilter: 3 }"> 3 stars</a>
+<a [routerLink]="['/flops']" [queryParams]="{ starsFilter: 4 }"> 4 stars</a>
+<a [routerLink]="['/flops']" [queryParams]="{ starsFilter: 5 }"> 5 stars</a>
+
+<router-outlet> </router-outlet>
